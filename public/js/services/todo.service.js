@@ -1,10 +1,10 @@
 (function() {
   angular.module('intro')
-         .factory('ToDoService', ToDoService);
+         .factory('TodoService', TodoService);
 
-  ToDoService.$inject = [];
+  TodoService.$inject = [];
 
-  function ToDoService(){
+  function TodoService(){
     var data = [
       'take a nap',
       'take another nap',
