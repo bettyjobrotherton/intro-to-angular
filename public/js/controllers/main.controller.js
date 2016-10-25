@@ -9,10 +9,16 @@
     //n
     $scope.todos = TodoService.get();
     $scope.createTodo = createTodo;
+    $scope.deleteTodo = deleteTodo;
+
 
     function createTodo(newTodo){
       TodoService.create(newTodo);
       $scope.newTodo = ' ';
+    }
+
+    function deleteTodo(index){
+      TodoService.delete(index);
     }
   }
 
