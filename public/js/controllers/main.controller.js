@@ -6,7 +6,6 @@
 
   function MainController ($scope, TodoService){
                           //scope is our bridge to the DOM
-    //n
     $scope.todos = TodoService.get();
     $scope.createTodo = createTodo;
     $scope.deleteTodo = deleteTodo;
